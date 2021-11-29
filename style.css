@@ -1,0 +1,25 @@
+.divu_meu{
+    width: 20%;
+    height: auto;
+    border: 3px red solid;
+    background-color: aqua;
+    text-align: center;
+
+}
+.divAdam{
+    width:45%;
+    height:auto;
+    border:10px blightblue;
+    background-color: pink;
+    text-align: right;
+    padding: 80px;
+    margin: 30px;
+}
+.parent{
+    display: flex;
+}
+h1{
+    color:brown
+}
+
+/*.dfef*/
