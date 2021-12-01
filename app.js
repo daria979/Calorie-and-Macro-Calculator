@@ -1,13 +1,10 @@
-//let a = document.getElementById("button");
 
+//Am rezolvat problema cu butonul de alert
+//puteti testa pe site 
 
-    /*let a = document.getElementsById("button");
+/*Nu uitati sa stergeti continutul acestui fisier*/
 
-    a.addEventListener("click", alertMeessage);
-
-    function alertMeessage() {
-       alert("You have clicked the button");
-    }*/
-
-
-alert("this is an alert!");
+function alertMessage() {
+    alert("You have clicked the button!");
+}
+~
