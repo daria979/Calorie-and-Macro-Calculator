@@ -4,8 +4,7 @@ h1{
     color:rgb(38, 83, 1)
 }
 body {
-    /*background-color: rgb(241, 211, 154);*/
-    background-color: rgb(255, 0, 242);
+    background-color: rgb(241, 211, 154);
 }
 .table-one{
     width: 130px;
@@ -13,7 +12,6 @@ body {
     background-color: rgb(154,205,50);
     margin-top: 140px;
     margin-left:80px;
-    padding: 80px; 
     border-radius: 25px;
     text-align: left;
 }
@@ -23,7 +21,6 @@ body {
     background-color: rgb(154, 205, 50);
     margin-left: 550px;
     margin-top:-500px;
-    padding: 150px; 
     border-radius: 25px;
     text-align: left;
 }
@@ -43,4 +40,48 @@ h2{
 }
 .title-three{
     color: white;    
+}
+
+
+
+/*/////////////////////////*/
+.categorie{
+    display: flex;
+    flex-wrap:wrap;
+    column-gap: 10px;
+    row-gap: 10px;
+    width: 100%;
+    height: auto;
+    background-color: aquamarine;
+}
+.aliment_card{
+    width: 50px;
+    height: 70px;
+    background-color: blueviolet;
+}
+
+.all-sections{
+    display: flex;
+    justify-content: space-around;
+    background-color: brown;
+    width: 100%;
+    height: auto;
+}
+.child-section{
+    width: 20%;
+    height: 300px;
+    background-color: chartreuse;
+}
+.div1{
+    background-color: crimson;
+    
+
+}
+.form{
+    padding: 20px;
+    padding-right: 0;
+}
+label{
+    text-align: right;
+   
 }

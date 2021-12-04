@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calorie and Macro Calculator</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script type="text/javascript" src="app.js"></script>
-</head>
- <body>
+  </head>
+  <body>
     <h1>Calorie and Macro Calculator</h1>
-    <div class="table-one">
+    <!--<div class="table-one">
         <div > 
             <label>Age: </label>
             <input type="number" name="age" placeholder="Type your age">
@@ -42,12 +42,68 @@
     </div>
     <div class="table-two"> 
         <h2>Select food</h2>
+
+        <h3>Nume categorie</h3>
+        <div class="categorie">
+            <div class="aliment_card"></div>
+            <div class="aliment_card"></div>
+            <div class="aliment_card"></div>
+            <div class="aliment_card"></div>
+            <div class="aliment_card"></div>
+            <div class="aliment_card"></div>
+        </div>
     </div>
 
     <div class="table-three">
         <h2 class="title-three">Calories</h2>
     </div>
+-->
 
-
-</body>
+    <div class="all-sections">
+      <div class="child-section div1">
+        <form class="form">
+            <div > 
+                <label>Age: </label><br>
+                <input  name="age" placeholder="Type your age">
+            </div>
+            <br>
+            <div >
+                <label>Height: </label><br>
+                <input type="number" name="height" placeholder="height(cm)">
+            </div>
+            <br>
+            <div >
+                <label>Weight: </label><br>
+                <input type="number" name="weight" placeholder="weight(kg)">
+            </div>
+            <br>
+            <div > 
+                <label>Gender</label> <br>
+                <select name="gender">
+                    <option value="Male">Male</option>
+                    <option value="Female">Female</option>
+                    <option value="Other">Other</option>
+                </select>   
+            </div>
+            <br>
+            <div>
+                <label>Activity level(days per week): </label><br>
+                <input type="number" name="level" placeholder="from 0 to 7">
+            </div>
+        </form>
+      </div>
+      <div class="child-section div2">
+        <h3>Nume categorie</h3>
+        <div class="categorie">
+            <div class="aliment_card"></div>
+            <div class="aliment_card"></div>
+            <div class="aliment_card"></div>
+            <div class="aliment_card"></div>
+            <div class="aliment_card"></div>
+            <div class="aliment_card"></div>
+        </div>
+      </div>
+      <div class="child-section"></div>
+    </div>
+  </body>
 </html>
