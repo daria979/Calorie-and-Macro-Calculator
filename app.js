@@ -7,4 +7,3 @@
 function alertMessage() {
     alert("You have clicked the button!");
 }
-~
