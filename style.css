@@ -9,7 +9,7 @@ body {
 .table-one{
     width: 130px;
     height: 250px;
-    background-color: rgb(154,205,50);
+    background-color: rgb(209,44,44);
     margin-top: 140px;
     margin-left:80px;
     border-radius: 25px;
@@ -18,7 +18,7 @@ body {
 .table-two{
     width: 130px;
     height: 300px;
-    background-color: rgb(70, 11, 126);
+    background-color: rgb(154, 205, 50);
     margin-left: 550px;
     margin-top:-500px;
     border-radius: 25px;
@@ -31,7 +31,7 @@ h2{
 .table-three{
     width: 30px;
     height: 300px;
-    background-color: rgb(209, 44, 44);
+    background-color: rgb(154, 205, 50);
     margin-left: 1100px;
     margin-top:-600px;
     padding: 150px; 
@@ -41,8 +41,6 @@ h2{
 .title-three{
     color: white;    
 }
-
-
 
 /*/////////////////////////*/
 .categorie{
@@ -63,7 +61,7 @@ h2{
 .all-sections{
     display: flex;
     justify-content: space-around;
-    background-color: brown;
+    background-color: rgb(241, 211, 154);
     width: 100%;
     height: auto;
 }
@@ -71,9 +69,11 @@ h2{
     width: 20%;
     height: 300px;
     background-color: chartreuse;
+    border-radius: 10px;
+
 }
 .div1{
-    background-color: crimson;
+    background-color: chartreuse;
     
 
 }
@@ -83,5 +83,8 @@ h2{
 }
 label{
     text-align: right;
-   
+}
+h3{
+    text-align: center;
+
 }
