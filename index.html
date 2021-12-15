@@ -61,41 +61,64 @@
 <div class="all-sections"> 
     <div class="child-section div1">
         <form class="form">
-            <div > 
-                <label>Age: </label><br>
-                <input  name="age" placeholder="Type your age">
+            <div class="div_input"> 
+                <h4>Age</h4><br>
+                <input  type="text" name="age" placeholder="Type your age" class="input" >
             </div>
-            <br>
-            <div >
-                <label>Height: </label><br>
-                <input type="number" name="height" placeholder="height(cm)">
+            <div class="div_input">
+                <h4>Height </h4><br>
+                <input type="text" name="height" placeholder="Height (cm)" class="input" >
             </div>
-            <br>
-            <div >
-                <label>Weight: </label><br>
-                <input type="number" name="weight" placeholder="weight(kg)">
+            <div class="div_input">
+                <h4>Weight </h4><br>
+                <input type="text" name="weight" placeholder="Weight (kg)" class="input" >
             </div>
-            <br>
-            <div > 
-                <label>Gender</label> <br>
-                <select name="gender">
-                    <option value="Male">Male</option>
-                    <option value="Female">Female</option>
-                    <option value="Other">Other</option>
-                </select> 
+            
+            <div class="div_input"> 
+                <h4>Workouts per week</h4><br>
+                <select type="sele" name="level" placeholder="from 0 to 7" class="input" >
+                    <option>1 day</option>
+                    <option>2 days</option>
+                    <option>3 days</option>
+                    <option>4 days</option>
+                    <option>5 days</option>
+                    <option>6 days</option>
+                    <option>7 days</option>
+                </select>
             </div>
-            <br>
-            <div>
-                <label>Activity level(days per week): </label><br>
-                <input type="number" name="level" placeholder="from 0 to 7">
+            <div class="div_input"> 
+                <h4>Gender</h4> <br>
+                <div class="gender_align">
+                    <ul class="gender" class="div_input">
+                        <input type="radio" name="radio" id="male" class="input_gender"/>
+                        <label>Male</label>
+                    </ul>
+                    <ul class="gender" class="div_input">
+                        <input type="radio" name="radio" id="female" class="input_gender"/>
+                        <label>Female</label>
+                    </ul>
+                </div>
             </div>
+            
+            
         </form>
+
+        <!-- A D A M     A F I S A R E    R E Z U L T A T--> 
+
+            <!--Buton de actiune. Cand dai click pe el, Sa iti apara sub rezultatul-->
+            <button id="result1">Generate Result</button>
+            
+            <br>
+            <!--Aici trebuie sa iti apara rezultatul-->
+            <p id="output_result1"></p>
+
+
     </div>
     <div class="child-section div2">
         <form class="form">
         <h3>Select food</h3>
+        <label>Fruit and vegetables </label>
         <div class="categorie">
-            <label>Fruit and vegetables </label>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
@@ -103,8 +126,8 @@
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
         </div>
-        <div class="categorie">
-            <label>Starcky food</label> 
+        <label>Starcky food</label>
+        <div class="categorie"> 
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
@@ -112,8 +135,8 @@
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
         </div>
+        <label>Dairy</label>
         <div class="categorie">
-            <label>Dairy</label> <br>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
@@ -121,8 +144,9 @@
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
         </div>
+        <label>High in Protein</label> 
         <div class="categorie">
-            <label>High in Protein</label> 
+            
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
@@ -130,8 +154,9 @@
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
         </div>
+        <label>High in Fats</label> 
         <div class="categorie">
-            <label>High in Fats</label> 
+            
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
@@ -139,8 +164,11 @@
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
         </div>
-        <button id: "center" >Generate Result</button>
+       
     </form>
+
+    <button id="result2" >Generate Result</button>
+    
     </div>
     <div class="child-section div3">
         <h3>Calories</h3>
@@ -156,6 +184,11 @@
                 <label>Fat</label>
             </div>
         </div>
+
+        <div>
+            
+        </div>
+
         <div class="calories-consumed">
             <label>Consumed</label>
         </div>

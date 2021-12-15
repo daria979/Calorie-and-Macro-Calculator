@@ -68,47 +68,58 @@ h2{
 
 .all-sections{
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgb(241, 211, 154);
     width: 100%;
     height: auto;
+    align-items:center;
+    
 }
 .child-section{
     width: 20%;
-    height: 300px;
+    height: auto;
 }
 .div1{
     background-color: rgb(154,205,50);
     border-radius: 25px;
     color: rgb(38, 83, 1);
-
+    height: 70%;
+    width:300px;
+    margin: 50px;
+    
 }
 .div2{
     border-radius: 25px;
     background-color: rgb(154,205,50);
-    width:35%;
-    height: 500px;
+    height: auto;
     color: rgb(38, 83, 1);
+    width:500px;
+    margin: 50px;
 }
 .div3{
     border-radius: 25px;
     background-color: crimson;
-    height: 500px;
+    height: 70%;
     color: white;
+    width:300px;
+    margin:50px;
 }
 .form{
-    padding: 10px;
-    margin-left: 50px;
+    padding: 20px;
+    
 }
 button{
-    margin-left: 140px;
-    margin-top: 20px;
+    width: 40%;
+    margin-left:30%;
     border-radius: 5px;
     color:seashell;
     background-color: rgb(38, 83, 1);
 }
-label{
+h4{
     text-align: right;
+    width:150px;
+    font-size: 20px;
 }
 h3{
     text-align: center;
@@ -143,3 +154,50 @@ h3{
     color:rgb(38, 83, 1);
     text-align: center;
 }
+
+.input{
+    /*width:70%;*/
+    border-radius: 5px;
+    border-style: none;
+    box-shadow: 3px 3px rgb(38, 83, 1);
+    border: solid 2px rgb(38, 83, 1);
+    margin-left: 10px;
+    background-color: seashell;
+    overflow: hidden;
+    width: 100%;
+    height: 30px;
+}
+
+.gender{
+    display: flex;
+    list-style-type: none;
+    margin:0;
+    padding: 0;
+}
+
+.div_input{
+    display: flex;
+    align-items: baseline;
+    height: 80px;
+}
+
+.gender_align{
+    width: 100%;
+}
+
+option{
+    background-color: seashell;
+    color:rgb(38, 83, 1);
+    font-weight: bold;
+}
+
+#output_result1{
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    background-color: crimson;
+    color: white;
+}
+
+
+

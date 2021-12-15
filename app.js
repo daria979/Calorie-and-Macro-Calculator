@@ -4,9 +4,12 @@
 
 /*Nu uitati sa stergeti continutul acestui fisier*/
 
-function alertMessage() {
+/*function alertMessage() {
     alert("You have clicked the button!");
-}
+}*/
+
+
+
 
 function calsPerDay() {
     function find(id) {
@@ -20,8 +23,18 @@ function calsPerDay() {
     else if (find("female").checked) result = 665.09 + 9.56 * weight + (1.84 * height - 4.67 * age);
     find("totalCals").innerHTML = Math.round(result);
   }
-  calsPerDay();
 
+  //ceva de genul trebuie facut pt a afisa in elementul h1 
+  //document.getElementById("output_result1").innerHTML = result;
+  //calsPerDay();
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
   /*(function() {
     const form    = document.getElementById('calc-form');
     const results = document.getElementById('results');
