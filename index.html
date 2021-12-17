@@ -1,205 +1,221 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Calorie and Macro Calculator</title>
     <link rel="stylesheet" href="style.css" />
-    <script type="text/javascript" src="app.js"></script>
-</head>
-<body>
+    <script type="text/javascript" src="app.js" defer></script>
+    <script type="text/javascript" src="progress_bar.js" defer></script>
+  </head>
+  <body>
     <h1>Calorie and Macro Calculator</h1>
-    <!--<div class="table-one">
-        <div > 
-            <label>Age: </label>
-            <input type="number" name="age" placeholder="Type your age">
-        </div>
-        <br>
-        <div >
-            <label>Height: </label>
-            <input type="number" name="height" placeholder="height(cm)">
-        </div>
-        <br>
-        <div >
-            <label>Weight: </label>
-            <input type="number" name="weight" placeholder="weight(kg)">
-        </div>
-        <br>
-        <div > 
-            <label>Gender</label> 
-            <select name="gender">
-                <option value="Male">Male</option>
-                <option value="Female">Female</option>
-                <option value="Other">Other</option>
-            </select>   
-        </div>
-        <br>
-        <div>
-            <label>Activity level(days per week): </label>
-            <input type="number" name="level" placeholder="from 0 to 7">
-        </div>
+    <div class="status">
+      <img
+        src="https://creazilla-store.fra1.digitaloceanspaces.com/silhouettes/1631578/abstract-shape-silhouette-09630b-sm.png"
+        alt="status"
+        class="img-status"
+      />
+      <h2>Status</h2>
     </div>
-    <div class="table-two"> 
-        <h2>Select food</h2>
-
-        <h3>Nume categorie</h3>
-        <div class="categorie">
-            <div class="aliment_card"></div>
-            <div class="aliment_card"></div>
-            <div class="aliment_card"></div>
-            <div class="aliment_card"></div>
-            <div class="aliment_card"></div>
-            <div class="aliment_card"></div>
-        </div>
-    </div>
-
-    <div class="table-three">
-        <h2 class="title-three">Calories</h2>
-    </div>
--->
-<div class="status">
-    <img src="https://creazilla-store.fra1.digitaloceanspaces.com/silhouettes/1631578/abstract-shape-silhouette-09630b-sm.png" alt="status" class="img-status"/>
-    <h2>Status</h2>
-</div>
-<div class="all-sections"> 
-    <div class="child-section div1">
+    <div class="all-sections">
+      <div class="child-section div1">
         <form class="form">
-            <div class="div_input"> 
-                <h4>Age</h4><br>
-                <input  type="text" name="age" placeholder="Type your age" class="input" >
+          <div class="div_input">
+            <h4>Age</h4>
+            <br />
+            <input
+              type="text"
+              name="age"
+              placeholder="Type your age"
+              class="input"
+              id="age"
+            />
+          </div>
+          <div class="div_input">
+            <h4>Height</h4>
+            <br />
+            <input
+              type="text"
+              name="height"
+              placeholder="Height (cm)"
+              class="input"
+              id="height"
+            />
+          </div>
+          <div class="div_input">
+            <h4>Weight</h4>
+            <br />
+            <input
+              type="text"
+              name="weight"
+              placeholder="Weight (kg)"
+              class="input"
+              id="weight"
+            />
+          </div>
+
+          <div class="div_input">
+            <h4>Workouts per week</h4>
+            <br />
+            <select
+              type="select"
+              name="level"
+              placeholder="Select activity level"
+              class="input"
+              id="workoutsperweek">
+              <option id="activity1">Sedentary work</option>
+              <option id="activity2">Light exercises 1-3 days/week</option>
+              <option id="activity3">
+                Daily moderate activities or workouts 5-6 days/week
+              </option>
+              <option id="activity4">
+                Daily intense workouts and 1-3 days light workout
+              </option>
+              <option id="activity5">
+                Daily prolonged & very intense workout regiment
+              </option>
+            </select>
+          </div>
+          <div class="div_input">
+            <h4>Gender</h4>
+            <br />
+            <div class="gender_align" id="set1-of-buttons">
+              <ul class="gender" class="div_input">
+                <input
+                  type="radio"
+                  name="radio"
+                  id="male"
+                  class="input_gender"
+                />
+
+                <label>Male</label>
+              </ul>
+
+              <ul class="gender" class="div_input">
+                <input
+                  type="radio"
+                  name="radio"
+                  id="female"
+                  class="input_gender" 
+                />
+                <label>Female</label>
+              </ul>
             </div>
-            <div class="div_input">
-                <h4>Height </h4><br>
-                <input type="text" name="height" placeholder="Height (cm)" class="input" >
-            </div>
-            <div class="div_input">
-                <h4>Weight </h4><br>
-                <input type="text" name="weight" placeholder="Weight (kg)" class="input" >
-            </div>
-            
-            <div class="div_input"> 
-                <h4>Workouts per week</h4><br>
-                <select type="sele" name="level" placeholder="from 0 to 7" class="input" >
-                    <option>1 day</option>
-                    <option>2 days</option>
-                    <option>3 days</option>
-                    <option>4 days</option>
-                    <option>5 days</option>
-                    <option>6 days</option>
-                    <option>7 days</option>
-                </select>
-            </div>
-            <div class="div_input"> 
-                <h4>Gender</h4> <br>
-                <div class="gender_align">
-                    <ul class="gender" class="div_input">
-                        <input type="radio" name="radio" id="male" class="input_gender"/>
-                        <label>Male</label>
-                    </ul>
-                    <ul class="gender" class="div_input">
-                        <input type="radio" name="radio" id="female" class="input_gender"/>
-                        <label>Female</label>
-                    </ul>
-                </div>
-            </div>
-            
-            
+          </div>
+          
+          <div class="div_input">
+            <h4>My goal</h4>
+            <br />
+            <select
+              type="select"
+              name="level"
+              placeholder="My goal is..."
+              class="input"
+              id="goal">
+              <option id="mantain">Mantain</option>
+              <option id="fat_loss">Fat loss </option>
+              <option id="muscle_gain">Muscle gain</option>
+            </select>
+          </div>
         </form>
 
-        <!-- A D A M     A F I S A R E    R E Z U L T A T--> 
+        <!-- A F I S A R E    R E Z U L T A T-->
+      
+        <!--Buton de actiune. Cand dai click pe el, Sa iti apara sub rezultatul-->
+        <button id="result1" onclick="calsPerDay()">Generate Result</button>
 
-            <!--Buton de actiune. Cand dai click pe el, Sa iti apara sub rezultatul-->
-            <button id="result1">Generate Result</button>
-            
-            <br>
-            <!--Aici trebuie sa iti apara rezultatul-->
-            <p id="output_result1"></p>
-
+        <br />
+        <!--Aici trebuie sa iti apara rezultatul-->
+        <p id="output_result1"></p>
 
     </div>
-    <div class="child-section div2">
+
+
+      <div class="child-section div2">
         <form class="form">
-        <h3>Select food</h3>
-        <label>Fruit and vegetables </label>
-        <div class="categorie">
+          <h3>Select food</h3>
+          <label>Fruit and vegetables </label>
+          <div class="categorie">
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
-        </div>
-        <label>Starcky food</label>
-        <div class="categorie"> 
+          </div>
+          <label>Starcky food</label>
+          <div class="categorie">
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
-        </div>
-        <label>Dairy</label>
-        <div class="categorie">
+          </div>
+          <label>Dairy</label>
+          <div class="categorie">
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
-        </div>
-        <label>High in Protein</label> 
-        <div class="categorie">
-            
+          </div>
+          <label>High in Protein</label>
+          <div class="categorie">
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
-        </div>
-        <label>High in Fats</label> 
-        <div class="categorie">
-            
+          </div>
+          <label>High in Fats</label>
+          <div class="categorie">
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
             <div class="aliment_card"></div>
-        </div>
-       
-    </form>
+          </div>
+        </form>
 
-    <button id="result2" >Generate Result</button>
-    
-    </div>
-    <div class="child-section div3">
+        <button id="result2">Generate Result</button>
+      </div>
+      <div class="child-section div3">
         <h3>Calories</h3>
-        <img src="procente.png" alt="procente" class="img"/>
-        <div class="all-label">
-            <div class="child-label label1">
-                <label>Protein</label>
-            </div>
-            <div class="child-label label2">
-                <label>Carb</label>
-            </div>
-            <div class="child-label label3">
-                <label>Fat</label>
-            </div>
+        
+        <!--Progress bar-->
+        <div class="canvas-wrap">
+            <canvas id="canvas" width="300" height="300"></canvas>
+            <span id="procent"></span>
         </div>
 
-        <div>
-            
+
+        <div class="all-label">
+          <div class="child-label label1">
+            <label>Protein</label>
+          </div>
+          <div class="child-label label2">
+            <label>Carb</label>
+          </div>
+          <div class="child-label label3">
+            <label>Fat</label>
+          </div>
         </div>
+
+        <div></div>
 
         <div class="calories-consumed">
-            <label>Consumed</label>
+          <label>Consumed</label>
         </div>
         <div class="calories-remained">
-            <label>Remained</label>
+          <label>Remained</label>
         </div>
+      </div>
     </div>
-</div>
-</body>
+  </body>
 </html>
