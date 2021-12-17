@@ -30,8 +30,8 @@ body {
 }
 h2{
     text-align: center;
-    margin-top: -130px;
 }
+
 .table-three{
     width: 30px;
     height: 300px;
@@ -197,6 +197,20 @@ option{
     font-weight: bold;
     background-color: crimson;
     color: white;
+}
+.status{
+    height: auto;
+    width:300px;
+    margin: 50px;
+    color:blue;
+
+    
+}
+.img-status{
+    position: absolute;
+    z-index: -1;
+    left: 0;
+    top: 0;
 }
 
 
