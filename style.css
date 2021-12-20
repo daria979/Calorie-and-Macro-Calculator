@@ -9,6 +9,7 @@ h1{
 }
 body {
     background-color: #f1d39a;
+    position: relative;
 }
 .table-one{
     width: 130px;
@@ -68,7 +69,7 @@ h2{
 }
 
 .all-sections{
-    display: flex;
+   /*display: flex;*/
     flex-wrap: wrap;
     justify-content: space-around;
     background-color: rgb(241, 211, 154);
@@ -107,7 +108,7 @@ h2{
     margin:50px;
 }
 .form{
-    padding: 20px;
+    padding:20px;
     
 }
 button{
@@ -214,7 +215,6 @@ option{
     width:300px;
     margin: 50px;
     color:blue;
-
     
 }
 .img-status{
@@ -222,6 +222,8 @@ option{
     z-index: -1;
     left: 0;
     top: 0;
+    padding: 0;
+
 }
 
 /* Progress bar*/
