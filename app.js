@@ -52,5 +52,5 @@ function goal_checked(result)
     result *= 1.25;
 
   //Rezultat FINAL
-  document.getElementById("output_result1").innerHTML = Math.round(result);
+  document.getElementById("output_result1").innerHTML = "You should consume \n " + Math.round(result) + " calories";
 }

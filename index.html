@@ -121,7 +121,7 @@
         <!-- A F I S A R E    R E Z U L T A T-->
       
         <!--Buton de actiune. Cand dai click pe el, Sa iti apara sub rezultatul-->
-        <button id="result1" onclick="calsPerDay()">Generate Result</button>
+        <button id="result1" onclick="calsPerDay()">Get Result</button>
 
         <br />
         <!--Aici trebuie sa iti apara rezultatul-->
@@ -194,24 +194,34 @@
 
         <div class="all-label">
           <div class="child-label label1">
-            <label>Protein</label>
+            <p>
+              <span class="procent">35%</span> <br>Protein
+            </p>
           </div>
           <div class="child-label label2">
-            <label>Carb</label>
+            <p>
+              <span class="procent">40%</span> <br> Carbs
+            </p>
           </div>
           <div class="child-label label3">
-            <label>Fat</label>
+            <p>
+              <span class="procent">25%</span> <br> Fats
+            </p>
           </div>
         </div>
 
         <div></div>
 
-        <div class="calories-consumed">
-          <label>Consumed</label>
+        <div class="calories-status">
+          <div class="calories-consumed">
+            <p class="calories-text1">Consumed <br> 600 cal.</p>
+
+          </div>
+          <div class="calories-remained">
+            <p class="calories-text2">Remained <br> 800 cal.</p>
+          </div>
         </div>
-        <div class="calories-remained">
-          <label>Remained</label>
-        </div>
+        
       </div>
     </div>
   </body>
