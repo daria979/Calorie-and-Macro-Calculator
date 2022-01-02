@@ -18,7 +18,7 @@
         
           <h2>Status</h2>
 
-        <form class="form">
+        <form class="form" name="myForm" method="post" required>
           <div class="div_input">
             <h4>Age</h4>
             <br />
@@ -28,8 +28,13 @@
               placeholder="Type your age"
               class="input"
               id="age"
+              required
+              
             />
           </div>
+
+          <span id="error"></span>
+
           <div class="div_input">
             <h4>Height</h4>
             <br />
@@ -39,6 +44,7 @@
               placeholder="Height (cm)"
               class="input"
               id="height"
+              required
             />
           </div>
           <div class="div_input">
@@ -50,6 +56,7 @@
               placeholder="Weight (kg)"
               class="input"
               id="weight"
+              required
             />
           </div>
 
@@ -121,9 +128,9 @@
         <!-- A F I S A R E    R E Z U L T A T-->
       
         <!--Buton de actiune. Cand dai click pe el, Sa iti apara sub rezultatul-->
-        <button id="result1" onclick="calsPerDay()">Get Result</button>
+        <input type=submit value="Get Result" id="result1" onclick="calsPerDay()"/>
 
-        <br />
+        <br/>
         <!--Aici trebuie sa iti apara rezultatul-->
         <p id="output_result1"></p>
 
